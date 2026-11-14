@@ -1,0 +1,9 @@
+{
+  "name": "pipeline_ventas_pablo",
+  "serverless": true,
+  "catalog": "workspace",
+  "schema": "ingenieria_datos_pablo",
+  "development": true,
+  "continuous": false,
+  "libraries": [ { "notebook": { "path": "__WS__/03_pipeline_ventas" } } ]
+}

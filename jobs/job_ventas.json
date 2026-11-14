@@ -1,0 +1,16 @@
+{
+  "name": "job_ventas_pablo",
+  "max_concurrent_runs": 1,
+  "tasks": [
+    {
+      "task_key": "cargar_ventas",
+      "notebook_task": { "notebook_path": "__WS__/01_cargar_ventas", "source": "WORKSPACE" }
+    },
+    {
+      "task_key": "transformar_ventas",
+      "depends_on": [ { "task_key": "cargar_ventas" } ],
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": { "notebook_path": "__WS__/02_transformar_ventas", "source": "WORKSPACE" }
+    }
+  ]
+}
