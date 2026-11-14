@@ -1,0 +1,3 @@
+Run 548433209536467 | resultado: SUCCESS | 
+- transformar_ventas: SUCCESS | duración 19 s | 
+- cargar_ventas: SUCCESS | duración 17 s | 

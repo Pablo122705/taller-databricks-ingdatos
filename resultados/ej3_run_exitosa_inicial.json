@@ -1,0 +1,102 @@
+{
+  "cleanup_duration": 0,
+  "creator_user_name": "lopezpablorestrepo@gmail.com",
+  "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+  "end_time": 1794617631042,
+  "execution_duration": 0,
+  "job_id": 735279024881333,
+  "job_run_id": 898288355027991,
+  "number_in_job": 898288355027991,
+  "original_attempt_run_id": 898288355027991,
+  "run_duration": 60283,
+  "run_id": 898288355027991,
+  "run_name": "job_ventas_pablo",
+  "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/898288355027991",
+  "run_type": "JOB_RUN",
+  "setup_duration": 0,
+  "start_time": 1794617570759,
+  "state": {
+    "life_cycle_state": "TERMINATED",
+    "result_state": "SUCCESS",
+    "state_message": "",
+    "user_cancelled_or_timedout": false
+  },
+  "status": {
+    "state": "TERMINATED",
+    "termination_details": {
+      "code": "SUCCESS",
+      "message": "",
+      "type": "SUCCESS"
+    }
+  },
+  "tasks": [
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "depends_on": [
+        {
+          "task_key": "cargar_ventas"
+        }
+      ],
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794617630577,
+      "execution_duration": 21000,
+      "notebook_task": {
+        "notebook_path": "/Users/lopezpablorestrepo@gmail.com/taller_databricks/02_transformar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 128242460512172,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/128242460512172",
+      "setup_duration": 1000,
+      "start_time": 1794617607900,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SUCCESS",
+          "message": "",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "transformar_ventas"
+    },
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794617607458,
+      "execution_duration": 33000,
+      "notebook_task": {
+        "notebook_path": "/Users/lopezpablorestrepo@gmail.com/taller_databricks/01_cargar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 374989463189064,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/374989463189064",
+      "setup_duration": 3000,
+      "start_time": 1794617570791,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SUCCESS",
+          "message": "",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "cargar_ventas"
+    }
+  ],
+  "trigger": "ONE_TIME"
+}

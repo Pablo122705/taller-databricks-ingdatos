@@ -1,0 +1,133 @@
+{
+  "cleanup_duration": 0,
+  "creator_user_name": "lopezpablorestrepo@gmail.com",
+  "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+  "end_time": 1794617877147,
+  "execution_duration": 0,
+  "job_id": 735279024881333,
+  "job_run_id": 874590039608446,
+  "number_in_job": 874590039608446,
+  "original_attempt_run_id": 874590039608446,
+  "run_duration": 27294,
+  "run_id": 874590039608446,
+  "run_name": "job_ventas_pablo",
+  "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/874590039608446",
+  "run_type": "JOB_RUN",
+  "setup_duration": 0,
+  "start_time": 1794617849853,
+  "state": {
+    "life_cycle_state": "INTERNAL_ERROR",
+    "result_state": "FAILED",
+    "state_message": "Task cargar_ventas failed with message: Workload failed, see run output for details. This caused all downstream tasks to get skipped.",
+    "user_cancelled_or_timedout": false
+  },
+  "status": {
+    "state": "TERMINATED",
+    "termination_details": {
+      "code": "RUN_EXECUTION_ERROR",
+      "message": "Task cargar_ventas failed with message: Workload failed, see run output for details. This caused all downstream tasks to get skipped.",
+      "type": "CLIENT_ERROR"
+    }
+  },
+  "tasks": [
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "depends_on": [
+        {
+          "task_key": "cargar_ventas"
+        }
+      ],
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794617877015,
+      "execution_duration": 0,
+      "notebook_task": {
+        "notebook_path": "/Users/lopezpablorestrepo@gmail.com/taller_databricks/02_transformar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 658831116597840,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/658831116597840",
+      "setup_duration": 0,
+      "start_time": 1794617877015,
+      "state": {
+        "life_cycle_state": "SKIPPED",
+        "result_state": "UPSTREAM_FAILED",
+        "state_message": "An upstream task failed.",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SKIPPED",
+          "message": "An upstream task failed.",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "transformar_ventas"
+    },
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794617865672,
+      "execution_duration": 12000,
+      "notebook_task": {
+        "notebook_path": "/Users/lopezpablorestrepo@gmail.com/taller_databricks/01_cargar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 215329573776835,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/215329573776835",
+      "setup_duration": 3000,
+      "start_time": 1794617849891,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "RUN_EXECUTION_ERROR",
+          "message": "Workload failed, see run output for details",
+          "type": "CLIENT_ERROR"
+        }
+      },
+      "task_key": "cargar_ventas"
+    },
+    {
+      "attempt_number": 1,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794617876644,
+      "execution_duration": 6000,
+      "notebook_task": {
+        "notebook_path": "/Users/lopezpablorestrepo@gmail.com/taller_databricks/01_cargar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 416715917521149,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-b99dc2cf-ffa8.cloud.databricks.com/?o=7474647075974913#job/735279024881333/run/416715917521149",
+      "setup_duration": 2000,
+      "start_time": 1794617867952,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "RUN_EXECUTION_ERROR",
+          "message": "Workload failed, see run output for details",
+          "type": "CLIENT_ERROR"
+        }
+      },
+      "task_key": "cargar_ventas"
+    }
+  ],
+  "trigger": "ONE_TIME"
+}

@@ -1,0 +1,10 @@
+Run 874590039608446 | resultado: FAILED | Task cargar_ventas failed with message: Workload failed, see run output for details. This caused all downstream tasks to get skipped.
+- transformar_ventas: UPSTREAM_FAILED | duración 0 s | An upstream task failed.
+- cargar_ventas: FAILED | duración 16 s | Workload failed, see run output for details
+    error: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `columna_inexistente` cannot be resolved. Did you mean one of the following? [`cantidad`, `id_venta`, `precio_unitario`, `categoria`, `fecha`]. SQLSTATE: 42703
+== DataFrame ==
+"col" was called from , line 32 in cell [3]
+- cargar_ventas: FAILED | duración 9 s | Workload failed, see run output for details
+    error: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `columna_inexistente` cannot be resolved. Did you mean one of the following? [`cantidad`, `id_venta`, `precio_unitario`, `categoria`, `fecha`]. SQLSTATE: 42703
+== DataFrame ==
+"col" was called from , line 32 in cell [3]
