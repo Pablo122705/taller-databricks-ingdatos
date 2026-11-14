@@ -1,0 +1,6 @@
+id_venta : int
+fecha : date
+producto : string
+categoria : string
+cantidad : int
+precio_unitario : double
